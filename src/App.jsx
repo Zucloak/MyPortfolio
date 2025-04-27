@@ -1,27 +1,24 @@
-import React from "react";
-import './App.css';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Services from './components/Services';
-import Portfolio from './components/Portfolio';
-import AboutMe from './components/AboutMe';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import ServicesSection from "./components/Services";
+import PortfolioSection from "./components/Portfolio";
+import AboutMeSection from "./components/AboutMe";
+import AvailabilityBookingSection from "./components/Booking";
+import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router>
+    <div className="bg-gray-950 text-white font-sans">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/about" element={<AboutMe />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <Home />
+      <Services />
+      <Portfolio />
+      <AboutMe />
+      <Booking />
+      <Contact />
       <Footer />
-    </Router>
+    </div>
   );
 }
 
