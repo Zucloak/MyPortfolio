@@ -1,30 +1,23 @@
-// src/components/Navbar.jsx (Updated)
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './navbar.css';
 
-function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+const Navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="logo">
-        <h1>Ken Mosquera</h1>
-      </div>
-      <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-        <li><Link to="/" className="nav-link">Home</Link></li>
-        <li><Link to="/services" className="nav-link">Services</Link></li>
-        <li><Link to="/portfolio" className="nav-link">Portfolio</Link></li>
-        <li><Link to="/about" className="nav-link">About Me</Link></li>
-        <li><Link to="/contact" className="nav-link">Contact</Link></li>
-      </ul>
-      <div className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        <span></span>
-        <span></span>
-        <span></span>
+    <nav className="fixed top-0 w-full bg-black bg-opacity-70 backdrop-blur-md shadow-md z-50">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center text-white">
+        <div className="text-xl font-bold tracking-wide">
+          Ken Mosquera
+        </div>
+        <div className="space-x-6 text-sm font-medium">
+          <Link to="/" className="hover:text-blue-400 transition">Home</Link>
+          <Link to="/services" className="hover:text-blue-400 transition">Services</Link>
+          <Link to="/portfolio" className="hover:text-blue-400 transition">Portfolio</Link>
+          <Link to="/about" className="hover:text-blue-400 transition">About Me</Link>
+          <Link to="/booking" className="hover:text-blue-400 transition">Availability</Link>
+          <Link to="/contact" className="hover:text-blue-400 transition">Contact</Link>
+        </div>
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
