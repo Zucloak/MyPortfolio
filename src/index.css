@@ -1,68 +1,121 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ken Mosquera - Mechanical Engineering Portfolio | CAD Design | FEA Analysis">
+  <title>Ken Mosquera | Mechanical Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">Ken Mosquera</div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Ken Mosquera</h1>
+      <h2>3rd Year Mechanical Engineering Student</h2>
+      <p>Designing Tomorrow’s Solutions Today</p>
+      <a href="#booking" class="btn-primary">Request a Consultation</a>
+    </div>
+  </section>
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+  <!-- Availability Indicator -->
+  <section class="availability">
+    <div class="container">
+      <span class="status available">Available for New Projects</span>
+    </div>
+  </section>
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>My Engineering Services</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <h3>CAD Design & 3D Modeling</h3>
+          <p>Precision CAD models for mechanical systems and components, ready for simulation or fabrication.</p>
+          <a href="#booking" class="btn-secondary">Inquire about CAD</a>
+        </div>
+        <div class="service-card">
+          <h3>Finite Element Analysis (FEA)</h3>
+          <p>Structural, thermal, and dynamic simulations to optimize and validate designs before prototyping.</p>
+          <a href="#booking" class="btn-secondary">Inquire about FEA</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2>Past Engineering Projects</h2>
+      <div class="portfolio-gallery">
+        <!-- Portfolio cards will go here -->
+      </div>
+    </div>
+  </section>
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+  <!-- About Me Section -->
+  <section id="about" class="about">
+    <div class="container about-content">
+      <h2>About Me</h2>
+      <p>I'm Ken Mosquera, passionate about designing and analyzing mechanical systems. I specialize in CAD modeling, simulation, and real-world problem-solving through engineering excellence.</p>
+      <ul class="skills">
+        <li>CAD Software: SolidWorks, AutoCAD</li>
+        <li>FEA Tools: ANSYS, Abaqus</li>
+        <li>Programming: Python, MATLAB</li>
+      </ul>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="btn-primary">Connect on LinkedIn</a>
+    </div>
+  </section>
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+  <!-- Availability & Booking Section -->
+  <section id="booking" class="booking">
+    <div class="container">
+      <h2>Availability & Booking</h2>
+      <p>I'm currently available for freelance mechanical engineering projects. Let's discuss how I can help you!</p>
+      <form action="https://formspree.io/f/yourformid" method="POST" class="booking-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="project" placeholder="Tell me about your project..." required></textarea>
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Have questions? Want to collaborate? Get in touch!</p>
+      <a href="mailto:your.email@example.com" class="btn-secondary">Email Me</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Ken Mosquera. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
